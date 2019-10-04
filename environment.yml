@@ -1,0 +1,12 @@
+name: dns-random-subdomains-ddos-attack 
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - jupyter
+  - tqdm
+  - pip:
+    - datasketch
+    - smart-open
