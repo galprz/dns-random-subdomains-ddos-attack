@@ -7,6 +7,8 @@ dependencies:
   - jupyterlab
   - jupyter
   - tqdm
+  - pyspark
   - pip:
     - datasketch
     - smart-open
+    - hyperjson

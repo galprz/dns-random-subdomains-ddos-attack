@@ -1,0 +1,5 @@
+*.gz
+.DS_Store
+*.csv
+*.json
+.idea
