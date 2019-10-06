@@ -8,7 +8,9 @@ dependencies:
   - jupyter
   - tqdm
   - pyspark
+  - pandas
+  - matplotlib
   - pip:
     - datasketch
     - smart-open
-    - hyperjson
+    - murmurhash3
