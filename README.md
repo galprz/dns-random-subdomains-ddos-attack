@@ -8,14 +8,14 @@ This repository contains implementation for the Mitigating DNS random subdomain 
 
 # Setup
 First download the code by git clone this repo:
-<code>
+```bash
 git clone https://github.com/galprz/dns-random-subdomains-ddos-attack
-</code>
+```
 Then use conda to install dependencies and setup the environment
-<code>
+```bash
 conda end update -f environment.yml
 conda activate dns-random-subdomains-ddos-attack 
-</code>
+```
 # Code structure
 
 + utils/data.py contains helpers to download the dataset
@@ -29,30 +29,29 @@ experiment 1 - https://colab.research.google.com/drive/1Yk-uiUmInENKCm4NXL1ATxLt
 experiment 2 - https://colab.research.google.com/drive/1uWzWik50PpAt4UqVFQCM8g0TbjJcWCno<br>
 
 # Referances
-<code>
-@article{1,<br>
-	author = {Feibish, Shir Landau and Afek, Yehuda and Bremler-Barr, Anat and Cohen, Edith and Shagam, Michal},<br>
-	title = {{Mitigating DNS random subdomain DDoS attacks by distinct heavy hitters sketches}},<br>
-	year = {2017},<br>
-	month = {Oct},<br>
-	isbn = {978-1-4503-5527-8},<br>
-	publisher = {ACM},<br>
-	doi = {10.1145/3132465.3132474}<br>
+```
+@article{1,
+	author = {Feibish, Shir Landau and Afek, Yehuda and Bremler-Barr, Anat and Cohen, Edith and Shagam, Michal},
+	title = {{Mitigating DNS random subdomain DDoS attacks by distinct heavy hitters sketches}},
+	year = {2017},
+	month = {Oct},
+	isbn = {978-1-4503-5527-8},
+	publisher = {ACM},
+	doi = {10.1145/3132465.3132474}
 }
-</code>
-<br><br>
-<code>
-@article{2,<br>
+```
+```
+@article{2,
 	author = {Chabchoub, Yousra and Chiky, Raja and Dogan, Betul},<br>
-	title = {{How can sliding HyperLogLog and EWMA detect port scan attacks in IP traffic?}},<br>
-	journal = {EURASIP J. on Info. Security},<br>
-	volume = {2014},<br>
-	number = {1},<br>
-	pages = {1--11},<br>
-	year = {2014},<br>
-	month = {Dec},<br>
-	issn = {1687-417X},<br>
-	publisher = {SpringerOpen},<br>
-	doi = {10.1186/1687-417X-2014-5}<br>
+	title = {{How can sliding HyperLogLog and EWMA detect port scan attacks in IP traffic?}},
+	journal = {EURASIP J. on Info. Security},
+	volume = {2014},
+	number = {1},
+	pages = {1--11},
+	year = {2014},
+	month = {Dec},
+	issn = {1687-417X},
+	publisher = {SpringerOpen},
+	doi = {10.1186/1687-417X-2014-5}
 }
-</code>
+```
