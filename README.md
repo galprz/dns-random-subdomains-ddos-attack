@@ -8,12 +8,14 @@ This repository contains implementation for the Mitigating DNS random subdomain 
 
 # Setup
 First download the code by git clone this repo:
-
+<code>
 git clone https://github.com/galprz/dns-random-subdomains-ddos-attack
+</code>
 Then use conda to install dependencies and setup the environment
-
+<code>
 conda end update -f environment.yml
 conda activate dns-random-subdomains-ddos-attack 
+</code>
 # Code structure
 
 + utils/data.py contains helpers to download the dataset
