@@ -6,7 +6,7 @@ import mmh3
 def hash(subdomain, domain):
     return mmh3.hash128("%s_%s" % (subdomain, domain)) / float(2**128)
 
-class DistinctHeavyHitter:
+class DistinctHeavyHitters:
 
     def __init__(self, k, threshold=1):
         self.dCounters = {}
@@ -15,7 +15,7 @@ class DistinctHeavyHitter:
         self.threshold = threshold
         self.k = k
 
-    def ingest(self, subdomain, domain):
+    def update(self, subdomain, domain):
         hash_value = hash(subdomain, domain)
         if domain in self.dCounters:
             self.dCounters[domain].update(subdomain.encode('utf8'))
@@ -38,5 +38,27 @@ class DistinctHeavyHitter:
                     del self.seeds[domain_key]
                     del self.tho[domain_key]
 
-    def get(self):
+    def count(self):
         return [(domain, self.dCounters[domain].count(), self.tho[domain]) for domain in self.dCounters]
+
+class HeavyHitters:
+    def __init__(self, k):
+        self.k = k
+        self.counters = {}
+
+    def update(self, subdomain):
+        if subdomain in self.counters:
+            self.counters[subdomain] += 1
+        elif len(self.counters) < self.k:
+            self.counters[subdomain] = 1
+        else:
+            keys_to_delete = []
+            for key in self.counters:
+                self.counters[key] -= 1
+                if self.counters[key] == 0:
+                    keys_to_delete.append(key)
+            for key in keys_to_delete:
+                del self.counters[key]
+
+    def get(self):
+        return [key for key in self.counters]

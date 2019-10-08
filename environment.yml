@@ -14,3 +14,6 @@ dependencies:
     - datasketch
     - smart-open
     - murmurhash3
+    - uuid
+    - psutil
+    - hdf5storage
