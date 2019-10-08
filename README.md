@@ -20,7 +20,7 @@ conda activate dns-random-subdomains-ddos-attack
 + algorithm.py contains the dwsHH and classic heavy hitter algorithm implementation
 + experiment1.ipynb contains the evaluation of the dwsHH as a distinct cardnality estimation
 + experiment2.ipynb contains the evaluation for the end 2 end detection system suggested by the paper
-+ report.pdf contains the report that cover [1] and [2]
++ report.pdf report that covers [1] and [2]
 # Experiments
 Google colab links to view notebooks:<br>
 experiment 1 - https://colab.research.google.com/drive/1Yk-uiUmInENKCm4NXL1ATxLtmD4bWXad<br>
