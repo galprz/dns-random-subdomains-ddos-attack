@@ -14,8 +14,8 @@ This repository contains implementation for the Mitigating DNS random subdomain 
 
 Mirai is the code name of a well-known malware that infects IoT devices, turning them into a remotely controlled bots.
 This network of remotely controlled devices known as botnet can be use to launch distributed denial of service(DDOS) attack.
-Denial of service happens when too many requests are sent to server and the server can't fulfill more requests and as a result starting to reject users' requests.
-In October 2016 Mirai`s botnet was used to launch DDoS attack directed to Dyn, a major Domain Name System(DNS) provider. this attack had major impact on well known companies including AirBnB, Netflix, PayPal, and GitHub.
+Denial of service happens when too many requests are sent to server and the server can't fulfill more requests and as a result starting to reject users requests.
+In October 2016 Mirais botnet was used to launch DDoS attack directed to Dyn, a major Domain Name System(DNS) provider. this attack had major impact on well known companies including AirBnB, Netflix, PayPal, and GitHub.
 
 ## Mitigating DNS random subdomain DDoS attacks
 The "Mitigating DNS random subdomain DDoS attacks by distinct heavy hitters sketches" paper describe how to use noval data sketch algorithm, distinct weighted sampling heavy hitters(dwsHH), to detect DNS random subdomain DDoS attacks like the one that happened in the Mirai case.
